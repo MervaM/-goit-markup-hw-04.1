@@ -151,6 +151,8 @@ a {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  color: #757575;
+ 
 }
 
 .contacts:last-child {
@@ -166,7 +168,7 @@ a {
   margin-right: 10px;
   width: 16px;
   height: 12px;
-  fill: #757575;
+  fill:currentColor;
 }
 
 .mail-icon:hover {
@@ -177,7 +179,7 @@ a {
   margin-right: 10px;
   width: 10px;
   height: 14.94px;
-  fill: #757575;
+  fill: currentColor;
   
 }
 
@@ -497,23 +499,19 @@ a {
   border-radius: 50%;
   align-items: center;
   justify-content: center; 
+  color: #afb1b8;
+  background-color: #fff;   
 }
 
-.title-picture:hover,
-.title-picture:focus {
+.title-picture:hover {
+  color: #ffffff;
   background-color: var(--accent-color);
 }
 
 .team-icons {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
-
-}
-
-.team-icons:hover,
-.team-icons:focus{
-  fill: #ffffff;
+  fill: currentColor;
 }
 
 /*постійні*/
@@ -528,8 +526,7 @@ a {
 }
 
 .customers-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: flex;  
   margin: 0;
   padding: 0;
   justify-content: center;
@@ -552,40 +549,40 @@ a {
   margin-right: 0;
 }
 
-.customers-logo {
-  width: 170px;
-  height: 90px;
-  background-color: #ffffff;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
-.customers-logo:hover,
-.customers-logo:focus {
-  color: var(--accent-color);
-}
-
 .customers-list {
   list-style: none;
 }
 
-.company-logo {
-  background-color: #ffffff;
-  fill: #afb1b8;
+.thumb-logo {
+  display: flex;
+  margin: 0;
+  width: 170px;
+  height: 90px;
+  background-color: var(--footer-color);
+  border: 1px solid #AFB1B8;
+  color: #AFB1B8;
+  border-radius: 4px; 
+  align-items: center;
+  justify-content: center; 
 }
 
-.company-logo:hover,
+.thumb-logo:hover {
+  color: #2196f3;
+  border-color: #2196f3;
+}
+
+.company-logo {
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  fill: currentColor;
+}
+
+/*.company-logo:hover,
 .company-logo:focus {
   fill: var(--accent-color);
-}
-
-.thumb-logo:hover,
-.thumb-logo:focus {
-  color: var(--accent-color);
-}
-
+}*/
+ 
 /*portfolio filter*/
 
 .filter {
@@ -694,7 +691,8 @@ a {
   margin-bottom: 0;
 }
 
-.project-element:hover {
+.project-element:hover,
+.project-element:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
