@@ -407,6 +407,14 @@ a {
   text-align: center;
 }
 
+.thumb-work {
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 370px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+}
+
 /*team*/
 
 .team-section {
@@ -657,7 +665,7 @@ a {
   padding-bottom: 94px;
 }
 
-.section-title {
+.portfolio-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
